@@ -5,7 +5,7 @@ export default function Herosection() {
   return (
     <Center
       style={{
-        height: "85vh"
+        height: "90vh"
       }}
     >
       <Stack align="center" spacing="sm">
