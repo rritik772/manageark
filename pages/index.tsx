@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import HomeScreen from '../components/homescreen/HomeScreen'
+import BottomBar from '../components/bottombar/BottomBar'
 
 export default function Home() {
   return (
@@ -12,6 +13,7 @@ export default function Home() {
       </Head>
       <main>
         <HomeScreen />
+        <BottomBar />
       </main>
     </>
   )

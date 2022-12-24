@@ -11,7 +11,9 @@ export default function OutProcess() {
       direction="column"
       mt="10rem"
       align="center"
+      justify="center"
       gap={15}
+      mih="50vh"
     >
       <Title size="h2">Our Process</Title>
 

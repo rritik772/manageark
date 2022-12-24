@@ -6,8 +6,10 @@ export default function OurFeature() {
     <Flex
       direction="column"
       align="center"
+      justify="center"
       gap={20}
       mt="2rem"
+      mih="20vh"
     >
       <Title size="h2">Our Features</Title>
       <Flex
