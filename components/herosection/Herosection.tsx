@@ -13,7 +13,7 @@ export default function Herosection() {
         <IconRollercoaster size={45} />
         <Title size="h1" align="center">Transform With Our Solutions</Title>
         <Text> Make every experience enjoyable with our innovative solution </Text>
-        <Text> We're are here for you, always </Text>
+        <Text> We&apos;re are here for you, always </Text>
         <Button
           variant="gradient"
           gradient={{ from: 'blue', to: 'teal' }}
