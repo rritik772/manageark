@@ -17,7 +17,21 @@ export default function App({ Component, pageProps }: AppProps) {
       withNormalizeCSS
       theme={{
         colorScheme: 'light',
-        fontFamily: 'Georgia, serif'
+        fontFamily: 'dm',
+        headings: { fontFamily: 'dmd' },
+
+        components: {
+
+          Button: {
+            styles: () => ({
+              root: {
+                fontFamily: 'dmb'
+              }
+            })
+          },
+
+        }
+
       }}
     >
       <AppShell
@@ -39,18 +53,6 @@ export default function App({ Component, pageProps }: AppProps) {
               </Button>
             )}
           </Transition>
-        </Affix>
-
-        <Affix position={{ top: 20, left: "50%" }}>
-          <Button
-            leftIcon={<IconWreckingBall size={16} />}
-            variant="outline"
-            color="red"
-            component='div'
-            bg="white"
-          >
-            Website is in progress
-          </Button>
         </Affix>
 
       </AppShell>

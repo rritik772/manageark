@@ -1,5 +1,5 @@
-import { ActionIcon, Flex, Navbar, NavLink, ScrollArea, Title, Text } from "@mantine/core"
-import { Icon360, Icon3dCubeSphere, IconAddressBook, IconBadges, IconCash, IconHeart, IconHome2, IconMoonStars, IconSun } from "@tabler/icons"
+import { Navbar, NavLink, ScrollArea, Button } from "@mantine/core"
+import { Icon360, Icon3dCubeSphere, IconAddressBook, IconBadges, IconBrandBlogger, IconCash, IconHome2, IconWreckingBall } from "@tabler/icons"
 
 export default function NavBar({ isHidden }: { isHidden: boolean }) {
 
@@ -17,14 +17,21 @@ export default function NavBar({ isHidden }: { isHidden: boolean }) {
         <NavLink component="a" href="/solutions" label="Solutions" icon={<Icon3dCubeSphere />} color="orange" />
         <NavLink component="a" href="/process" label="Process" icon={<Icon360 />} />
         <NavLink component="a" href="/pricing" label="Pricing" icon={<IconCash />} />
+        <NavLink component="a" href="/blogs" label="Blogs" icon={<IconBrandBlogger />} />
         <NavLink component="a" href="" label="About Us" icon={<IconBadges />} />
         <NavLink component="a" href="" label="Contact Us" icon={<IconAddressBook />} />
       </Navbar.Section>
 
       <Navbar.Section m="xs">
-        <Text color="gray">
-          Made with <IconHeart size={15} fill="#FF6D6D" color="#FF6D6D" /> by Griiken
-        </Text>
+        <Button
+          leftIcon={<IconWreckingBall size={16} />}
+          variant="outline"
+          color="red"
+          component='div'
+          bg="white"
+        >
+          Website is in progress
+        </Button>
       </Navbar.Section>
 
     </Navbar>

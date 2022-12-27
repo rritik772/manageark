@@ -1,6 +1,8 @@
+import pnglogo from './../../assets/logo/logo-no-background.png';
+import Image from 'next/image';
 import { ActionIcon, Burger, Flex, Header, MediaQuery, Title } from "@mantine/core";
-import { IconMoonStars } from "@tabler/icons";
 import { FC } from "react";
+import { IconMoonStars } from "@tabler/icons";
 
 interface AppBarProps {
   isHidden: boolean,
@@ -30,10 +32,11 @@ const AppBar: FC<AppBarProps> = ({ isHidden, setIsHidden }) => {
 
         <Flex
           justify="space-between"
+          align="center"
           style={{ width: '100%' }}
         >
 
-          <Title order={2}>Griiken</Title>
+          <Image src={pnglogo} width={200} alt="logo" />
 
           <ActionIcon>
             <IconMoonStars />
@@ -46,7 +49,7 @@ const AppBar: FC<AppBarProps> = ({ isHidden, setIsHidden }) => {
 
         </Flex>
       </div>
-    </Header>
+    </Header >
 
   )
 }

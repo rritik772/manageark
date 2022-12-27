@@ -19,7 +19,6 @@ export default function BottomBar() {
     <SimpleGrid
       mt="7rem"
       mb="5rem"
-      mx="2rem"
       cols={3}
       spacing="lg"
       breakpoints={[
@@ -48,7 +47,7 @@ export default function BottomBar() {
           <Textarea
             icon={<IconMessageCircle />}
             placeholder="Your comment"
-            label="comments..."
+            label="Comments"
             withAsterisk
             {...form.getInputProps('comment')}
             mb="7px"
