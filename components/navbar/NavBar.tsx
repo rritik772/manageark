@@ -35,6 +35,7 @@ export default function NavBar({ isHidden }: { isHidden: boolean }) {
               icon={link.icon}
               active={link.href === router.asPath}
               style={{ borderRadius: '5px' }}
+              key={index}
             />
           ))
         }
