@@ -1,4 +1,4 @@
-import { Anchor, Card, Group, Text, ThemeIcon, Title } from "@mantine/core";
+import { Anchor, Avatar, Card, Group, Text, ThemeIcon, Title } from "@mantine/core";
 import { IconArrowBounce } from "@tabler/icons";
 import BottomBar from "../components/bottombar/BottomBar";
 import AvaliableSolution from "../components/solutions/AvaliableSolutions";
@@ -16,8 +16,15 @@ export default function Solutions() {
       <main style={{ marginLeft: '1rem' }}>
         <Title>Our Projects</Title>
         <Card my="1rem" shadow="md" p="lg" radius="lg" withBorder w="20rem">
+          <Card.Section>
+            <div style={{
+              width: '100%',
+              height: '100px',
+              backgroundColor: 'hsl(180, 50%, 30%)'
+             }} />
+          </Card.Section>
 
-          <Group align="end" position="apart">
+          <Group align="end" position="apart" mt='md'>
             <Text fz="lg" className="dmb">Manage Ark</Text>
             <Anchor align="center" component="a" href="https://www.google.com">
               <IconArrowBounce />

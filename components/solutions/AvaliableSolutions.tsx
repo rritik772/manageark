@@ -12,32 +12,80 @@ export default function AvaliableSolution() {
       ]}
     >
       <Card shadow="md" radius="lg" withBorder>
-        <Text fz="lg" className="dmb">Software Solution</Text>
+          <Card.Section>
+            <div style={{
+              width: '100%',
+              height: '125px',
+              backgroundColor: 'hsl(320, 40%, 30%)'
+             }} />
+          </Card.Section>
+
+        <Text fz="lg" className="dmb" mt="lg">Software Solution</Text>
         <Text>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</Text>
       </Card>
 
       <Card shadow="md" radius="lg" withBorder>
-        <Text fz="lg" className="dmb">Software Solution</Text>
+          <Card.Section>
+            <div style={{
+              width: '100%',
+              height: '125px',
+              backgroundColor: 'hsl(320, 40%, 30%)'
+             }} />
+          </Card.Section>
+
+        <Text fz="lg" className="dmb" mt="lg">Software Solution</Text>
         <Text>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</Text>
       </Card>
 
       <Card shadow="md" radius="lg" withBorder>
-        <Text fz="lg" className="dmb">Software Solution</Text>
+          <Card.Section>
+            <div style={{
+              width: '100%',
+              height: '125px',
+              backgroundColor: 'hsl(320, 40%, 30%)'
+             }} />
+          </Card.Section>
+
+        <Text fz="lg" className="dmb" mt="lg">Software Solution</Text>
         <Text>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</Text>
       </Card>
 
       <Card shadow="md" radius="lg" withBorder>
-        <Text fz="lg" className="dmb">Software Solution</Text>
+          <Card.Section>
+            <div style={{
+              width: '100%',
+              height: '125px',
+              backgroundColor: 'hsl(320, 40%, 30%)'
+             }} />
+          </Card.Section>
+
+        <Text fz="lg" className="dmb" mt="lg">Software Solution</Text>
         <Text>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</Text>
       </Card>
 
       <Card shadow="md" radius="lg" withBorder>
-        <Text fz="lg" className="dmb">Software Solution</Text>
+          <Card.Section>
+            <div style={{
+              width: '100%',
+              height: '125px',
+              backgroundColor: 'hsl(320, 40%, 30%)'
+             }} />
+          </Card.Section>
+
+        <Text fz="lg" className="dmb" mt="lg">Software Solution</Text>
         <Text>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</Text>
       </Card>
 
       <Card shadow="md" radius="lg" withBorder>
-        <Text fz="lg" className="dmb">Software Solution</Text>
+          <Card.Section>
+            <div style={{
+              width: '100%',
+              height: '125px',
+              backgroundColor: 'hsl(320, 40%, 30%)'
+             }} />
+          </Card.Section>
+
+        <Text fz="lg" className="dmb" mt="lg">Software Solution</Text>
         <Text>Lorem ipsum dolor sit amet, qui minim labore adipisicing minim sint cillum sint consectetur cupidatat.</Text>
       </Card>
 
