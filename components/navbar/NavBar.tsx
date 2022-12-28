@@ -1,7 +1,20 @@
 import { Navbar, NavLink, ScrollArea, Button } from "@mantine/core"
 import { Icon360, Icon3dCubeSphere, IconAddressBook, IconBadges, IconBrandBlogger, IconCash, IconHome2, IconWreckingBall } from "@tabler/icons"
+import { useRouter } from "next/router"
+import { useEffect } from "react";
 
 export default function NavBar({ isHidden }: { isHidden: boolean }) {
+  const router = useRouter();
+
+  const navLinkData = [
+    { href: '/', label: 'Home', icon: <IconHome2 /> },
+    { href: '/solutions', label: 'Solutions', icon: <Icon3dCubeSphere /> },
+    { href: '/process', label: 'Process', icon: <Icon360 /> },
+    { href: '/pricing', label: 'Pricing', icon: <IconCash /> },
+    { href: '/blogs', label: 'Blogs', icon: <IconBrandBlogger /> },
+    { href: '/aboutus', label: 'About Us', icon: <IconBadges /> },
+    { href: '/contactus', label: 'Contact Us', icon: <IconAddressBook /> },
+  ]
 
   // const { isDarkMode } = useUserOptionContext();
 
@@ -13,13 +26,18 @@ export default function NavBar({ isHidden }: { isHidden: boolean }) {
     >
 
       <Navbar.Section grow component={ScrollArea} m="xs" p="xs">
-        <NavLink component="a" href="/" label="Home" icon={<IconHome2 />} color="orange" />
-        <NavLink component="a" href="/solutions" label="Solutions" icon={<Icon3dCubeSphere />} color="orange" />
-        <NavLink component="a" href="/process" label="Process" icon={<Icon360 />} />
-        <NavLink component="a" href="/pricing" label="Pricing" icon={<IconCash />} />
-        <NavLink component="a" href="/blogs" label="Blogs" icon={<IconBrandBlogger />} />
-        <NavLink component="a" href="" label="About Us" icon={<IconBadges />} />
-        <NavLink component="a" href="" label="Contact Us" icon={<IconAddressBook />} />
+        {
+          navLinkData.map((link, index) => (
+            <NavLink
+              component="a"
+              href={link.href}
+              label={link.label}
+              icon={link.icon}
+              active={link.href === router.asPath}
+              style={{ borderRadius: '5px' }}
+            />
+          ))
+        }
       </Navbar.Section>
 
       <Navbar.Section m="xs">
