@@ -3,7 +3,7 @@ import type { AppProps } from 'next/app'
 import { Affix, AppShell, Button, MantineProvider, Transition } from '@mantine/core'
 import NavBar from '../components/navbar/NavBar'
 import AppBar from '../components/appbar/AppBar'
-import { useState } from 'react'
+import { useEffect, useState } from 'react'
 import { IconArrowUp, IconWreckingBall } from '@tabler/icons'
 import { useWindowScroll } from '@mantine/hooks'
 
@@ -16,7 +16,7 @@ export default function App({ Component, pageProps }: AppProps) {
       withGlobalStyles
       withNormalizeCSS
       theme={{
-        colorScheme: 'light',
+        colorScheme: 'dark',
         fontFamily: 'dm',
         headings: { fontFamily: 'dmd' },
 

@@ -25,10 +25,9 @@ export default function NavBar({ isHidden }: { isHidden: boolean }) {
       <Navbar.Section m="xs">
         <Button
           leftIcon={<IconWreckingBall size={16} />}
-          variant="outline"
           color="red"
-          component='div'
-          bg="white"
+          variant="subtle"
+          fullWidth
         >
           Website is in progress
         </Button>

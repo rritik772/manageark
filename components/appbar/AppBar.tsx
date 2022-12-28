@@ -38,7 +38,7 @@ const AppBar: FC<AppBarProps> = ({ isHidden, setIsHidden }) => {
 
           <Image src={pnglogo} width={200} alt="logo" />
 
-          <ActionIcon>
+          <ActionIcon component='button'>
             <IconMoonStars />
           </ActionIcon>
 
