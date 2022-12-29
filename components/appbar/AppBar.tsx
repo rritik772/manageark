@@ -3,6 +3,7 @@ import Image from 'next/image';
 import { ActionIcon, Burger, Flex, Header, MediaQuery, Title } from "@mantine/core";
 import { FC } from "react";
 import { IconMoonStars } from "@tabler/icons";
+import { useBroswerContext } from '../../contexts/broswerContext';
 
 interface AppBarProps {
   isHidden: boolean,
@@ -10,6 +11,8 @@ interface AppBarProps {
 }
 
 const AppBar: FC<AppBarProps> = ({ isHidden, setIsHidden }) => {
+
+  const { colorscheme, setColorScheme } = useBroswerContext();
 
   return (
     <Header height={{ base: 50, md: 70 }} p="md">
@@ -38,7 +41,7 @@ const AppBar: FC<AppBarProps> = ({ isHidden, setIsHidden }) => {
 
           <Image src={pnglogo} width={200} alt="logo" />
 
-          <ActionIcon component='button'>
+          <ActionIcon component='button' onClick={() => setColorScheme(colorscheme === 'dark' ? 'light': 'dark')}>
             <IconMoonStars />
           </ActionIcon>
 
