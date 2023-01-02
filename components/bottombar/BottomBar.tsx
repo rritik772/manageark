@@ -63,7 +63,7 @@ export default function BottomBar() {
       >
         <Title mb={10}>Company</Title>
 
-        <Anchor component="a" href="/solution">
+        <Anchor component="a" href="/solutions">
           Solution
         </Anchor>
         <Anchor component="a" href="/aboutus">
@@ -73,7 +73,7 @@ export default function BottomBar() {
           Process
         </Anchor>
         <Anchor component="a" href="/pricing">
-          Processing
+          Pricing
         </Anchor>
 
       </Flex>
